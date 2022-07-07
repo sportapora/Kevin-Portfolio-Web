@@ -9,7 +9,7 @@ function Home({ id }) {
         <div style={{ marginTop: '120px' }} id='main-heading'>
           <Heading title='Welcome To HCI!' />
         </div>
-        <p className='mt-5' id={id}>
+        <p className='mt-5 pt-5' id={id}>
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas
           accusantium voluptatem ipsa incidunt enim sequi soluta reiciendis
           distinctio laborum animi. Cum exercitationem voluptatem corrupti

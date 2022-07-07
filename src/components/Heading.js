@@ -1,5 +1,5 @@
 function Heading({ title }) {
-  return <h1 className='text-center heading'>{title}</h1>;
+  return <h1 className='text-center heading pt-5'>{title}</h1>;
 }
 
 export default Heading;

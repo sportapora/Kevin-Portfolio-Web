@@ -5,7 +5,7 @@ import Images from './Images';
 function ProductCards() {
   return (
     <div>
-      <div className='row mt-5'>
+      <div className='row mt-5 pt-5'>
         {Images.map(({ src, label, caption }, index) => {
           return (
             <div className='col-sm-6 col-lg-4' key={index}>

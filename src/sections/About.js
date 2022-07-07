@@ -12,7 +12,7 @@ function About({ id }) {
     >
       <div id={id}>
         <Heading title='About Us' />
-        <div className='row mt-5'>
+        <div className='row mt-5 pt-4'>
           <p className='col-lg-6 col-sm-12'>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
             delectus eius in nobis illum numquam dolores porro unde modi sint,
