@@ -2,7 +2,7 @@ import { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import Heading from '../components/Heading';
-import { db } from '../firebase/config';
+import { db } from '../firebase';
 import { collection, addDoc } from 'firebase/firestore';
 
 function Contact({ id }) {
@@ -10,7 +10,8 @@ function Contact({ id }) {
   const [message, setMessage] = useState('');
   const contactUsCollection = collection(db, 'contact_us');
 
-  const submitForm = () => {
+  const submitForm = (e) => {
+    e.preventDefault();
     addDoc(contactUsCollection, {
       Email: email,
       Message: message,
