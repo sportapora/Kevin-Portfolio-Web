@@ -4,8 +4,10 @@ import ProductCards from '../components/Product Cards';
 function Products({ id }) {
   return (
     <div id={id} className='container' style={{ marginTop: '140px' }}>
-      <Heading title='Our Products' />
-      <ProductCards />
+      <div className='pt-5'>
+        <Heading title='Our Products' />
+        <ProductCards />
+      </div>
     </div>
   );
 }

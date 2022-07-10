@@ -12,25 +12,32 @@ function Navigation({ id }) {
       style={{ fontFamily: 'League Spartan' }}
     >
       <Container>
-        <Navbar.Brand href='/' className='fw-bold'>
+        <Navbar.Brand href='/' className='fw-bold' style={{ fontSize: '30px' }}>
           HCI
         </Navbar.Brand>
         <Navbar.Toggle aria-controls='basic-navbar-nav' />
         <Navbar.Collapse id='basic-navbar-nav'>
-          <Nav className='me-auto'>
-            <Nav.Link href='#home'>Home</Nav.Link>
-            <Nav.Link href='#about'>About</Nav.Link>
-            <Nav.Link href='#products'>Our Products</Nav.Link>
-            <Nav.Link href='#contactus'>Contact Us</Nav.Link>
+          <Nav className='ms-auto'>
+            <Nav.Link href='#home' style={{ color: '#eee' }}>
+              Home
+            </Nav.Link>
+            <Nav.Link href='#about' style={{ color: '#eee' }}>
+              About
+            </Nav.Link>
+            <Nav.Link href='#products' style={{ color: '#eee' }}>
+              Our Products
+            </Nav.Link>
+            <Nav.Link href='#contactus' style={{ color: '#eee' }}>
+              Contact Us
+            </Nav.Link>
             <NavDropdown title='Social Media' id='basic-nav-dropdown'>
-              <NavDropdown.Item href='#action/3.1'>
-                <i className='fa-brands fa-facebook'></i>&nbsp; Facebook
-              </NavDropdown.Item>
               <NavDropdown.Item href='#action/3.2'>
-                <i className='fa-brands fa-instagram'></i>&nbsp; Instagram
+                <i className='fa-brands fa-instagram fa-lg'></i>&nbsp;
+                &#64;_instagram
               </NavDropdown.Item>
               <NavDropdown.Item href='#action/3.3'>
-                <i className='fa-brands fa-twitter'></i>&nbsp; Twitter
+                <i className='fa-brands fa-whatsapp fa-lg'></i>&nbsp; +62
+                89607192900
               </NavDropdown.Item>
             </NavDropdown>
           </Nav>

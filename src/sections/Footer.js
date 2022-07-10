@@ -1,3 +1,12 @@
+function myFunction({ children }) {
+  children.select();
+  children.setSelectionRange(0, 99999);
+
+  navigator.clipboard.writeText(children);
+
+  alert('Copied the text: ' + children);
+}
+
 function Footer() {
   return (
     <footer
@@ -21,20 +30,15 @@ function Footer() {
           </div>
           <div className='col-sm-12 col-lg-6 mb-4'>
             <h5 className='fw-bold'>Follow Us For More Information</h5>
-            <span className='d-block mt-3'>
-              <a href='#' className='text-decoration-none link'>
-                <i className='fa-brands fa-facebook fa-sm'></i>&nbsp; Facebook
+            <span className='d-block mt-3 fw-bold'>
+              <a href='#about' className='text-decoration-none link'>
+                <i className='fa-brands fa-instagram fa-sm'></i>&nbsp;
+                &#64;_instagram
               </a>
             </span>
-            <span className='d-block'>
-              <a href='#' className='text-decoration-none link'>
-                <i className='fa-brands fa-instagram fa-sm'></i>&nbsp; Instagram
-              </a>
-            </span>
-            <span className='d-block'>
-              <a href='#' className='text-decoration-none link'>
-                <i className='fa-brands fa-twitter fa-sm'></i>&nbsp; Twitter
-              </a>
+            <span className='d-block fw-bold'>
+              <i className='fa-brands fa-whatsapp fa-sm'></i>&nbsp;{' '}
+              <span onClick={myFunction}>+62 89607192900</span>
             </span>
           </div>
         </div>

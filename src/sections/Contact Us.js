@@ -8,17 +8,20 @@ import { collection, addDoc } from 'firebase/firestore';
 function Contact({ id }) {
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
+  const [phone, setPhone] = useState('');
   const contactUsCollection = collection(db, 'contact_us');
 
   const submitForm = (e) => {
     e.preventDefault();
     addDoc(contactUsCollection, {
       Email: email,
+      Phone: phone,
       Message: message,
     })
       .then(() => {
         alert('Successfully submitted!');
         setEmail('');
+        setPhone('');
         setMessage('');
       })
       .catch((err) => console.error(err));
@@ -43,6 +46,17 @@ function Contact({ id }) {
           </Form.Text>
         </Form.Group>
 
+        <Form.Group className='mb-3' controlId='formBasicEmail'>
+          <Form.Label>Phone Number</Form.Label>
+          <Form.Control
+            value={phone}
+            onChange={(e) => setPhone(e.target.value)}
+            type='text'
+            required={true}
+            placeholder='Enter your phone number'
+          />
+        </Form.Group>
+
         <Form.Group className='mb-3' controlId='exampleForm.ControlTextarea1'>
           <Form.Label>Your message here:</Form.Label>
           <Form.Control
@@ -55,9 +69,8 @@ function Contact({ id }) {
           />
         </Form.Group>
         <Button
-          variant='primary'
-          className='mt-3'
-          style={{ float: 'right' }}
+          className='mt-3 px-5 py-2'
+          style={{ float: 'right', backgroundColor: '#d6a672', border: '0' }}
           type='submit'
         >
           Submit

@@ -2,7 +2,7 @@ import Accordion from 'react-bootstrap/Accordion';
 import { useAccordionButton } from 'react-bootstrap/AccordionButton';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
-import Images from './Images';
+import Products from './Products';
 
 function AccordionToggle({ children, eventKey }) {
   const decoratedOnClick = useAccordionButton(eventKey, () =>
@@ -20,7 +20,7 @@ function ProductCards() {
   return (
     <div>
       <div className='row mt-5 pt-5'>
-        {Images.map(({ src, label, caption, description }, index) => {
+        {Products.map(({ src, label, caption, description }, index) => {
           return (
             <div className='col-sm-6 col-lg-4' key={index}>
               <Card className='mb-5'>

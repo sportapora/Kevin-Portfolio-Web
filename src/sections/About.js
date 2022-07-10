@@ -1,5 +1,6 @@
 import Heading from '../components/Heading';
 import image2 from '../img/image2.jpeg';
+import image3 from '../img/image3.jpeg';
 
 function About({ id }) {
   return (
@@ -15,7 +16,7 @@ function About({ id }) {
         <Heading title='About Us' />
         <div className='row mt-5 pt-4'>
           <div className='col-lg-6 col-sm-12'>
-            <p>
+            <p className='mb-4'>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Accusantium delectus eius in nobis illum numquam dolores porro
               unde modi sint, quasi doloremque, aliquid reprehenderit commodi
@@ -32,12 +33,32 @@ function About({ id }) {
             </p>
           </div>
           <div className='col-lg-6 col-sm-12'>
-            <img src={image2} className='w-75 rounded' alt='Product 2' />
+            <figure className='d-block text-center'>
+              <img
+                src={image2}
+                className='w-75 rounded mx-auto'
+                alt='Product 2'
+              />
+              <figcaption
+                className='text-disabled mt-2'
+                style={{ fontSize: '13px' }}
+              >
+                Caption for image
+              </figcaption>
+            </figure>
           </div>
         </div>
-        <div className='row' style={{ marginTop: '100px' }}>
-          <div className='col-lg-6 col-sm-12'>
-            <img src={image2} className='w-75 rounded' alt='Product 2' />
+        <div className='row' style={{ marginTop: '50px' }}>
+          <div className='col-lg-6 col-sm-12 mb-4'>
+            <figure className='d-block text-center'>
+              <img src={image3} className='w-75 rounded' alt='Product 2' />
+              <figcaption
+                className='text-disabled mt-2'
+                style={{ fontSize: '13px' }}
+              >
+                Caption for image
+              </figcaption>
+            </figure>
           </div>
           <div className='col-lg-6 col-sm-12'>
             <p>
