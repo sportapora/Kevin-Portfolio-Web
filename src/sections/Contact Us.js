@@ -28,7 +28,7 @@ function Contact({ id }) {
   };
 
   return (
-    <div id={id} className='container' style={{ marginTop: '120px' }}>
+    <div id={id} className='container' style={{ marginTop: '60px' }}>
       <Heading title='Contact Us' />
       <h4 className='mt-5 pt-4'>Please contact us for more information!</h4>
       <Form className='mt-3' onSubmit={submitForm}>
@@ -70,7 +70,8 @@ function Contact({ id }) {
         </Form.Group>
         <Button
           className='mt-3 px-5 py-2'
-          style={{ float: 'right', backgroundColor: '#d6a672', border: '0' }}
+          id={"submit-form-btn"}
+          style={{ float: 'right' }}
           type='submit'
         >
           Submit

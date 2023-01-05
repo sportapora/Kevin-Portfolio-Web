@@ -36,14 +36,14 @@ function About({ id }) {
             <figure className='d-block text-center'>
               <img
                 src={image2}
-                className='w-75 rounded mx-auto'
+                className='w-75 shadow rounded mx-auto'
                 alt='Product 2'
               />
               <figcaption
                 className='text-disabled mt-2'
                 style={{ fontSize: '13px' }}
               >
-                Caption for image
+                Modern, Elegant Bamboo Furniture
               </figcaption>
             </figure>
           </div>
@@ -51,12 +51,12 @@ function About({ id }) {
         <div className='row' style={{ marginTop: '50px' }}>
           <div className='col-lg-6 col-sm-12 mb-4'>
             <figure className='d-block text-center'>
-              <img src={image3} className='w-75 rounded' alt='Product 2' />
+              <img src={image3} className='w-75 shadow rounded' alt='Product 2' />
               <figcaption
                 className='text-disabled mt-2'
                 style={{ fontSize: '13px' }}
               >
-                Caption for image
+                Modern Bamboo Basket
               </figcaption>
             </figure>
           </div>
